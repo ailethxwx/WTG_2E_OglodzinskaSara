@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: "T\u0142o"
+    uniqueID: 2414834105
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
