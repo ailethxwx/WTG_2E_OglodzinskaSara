@@ -31,4 +31,12 @@ public class PlayerMovement : MonoBehaviour
         jump = false;
         //a to wyzej jest do skoku to nvm
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Coin")
+        {
+            ScoreManager.scoreCount += 1;
+        }
+    }
 }
