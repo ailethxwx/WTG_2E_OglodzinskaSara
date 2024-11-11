@@ -246,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 336090367}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.54, y: 1.2, z: 0}
+  m_LocalPosition: {x: 2.7, y: -0.7, z: 0}
   m_LocalScale: {x: 3.9531286, y: 1.1434, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -376,7 +376,7 @@ Transform:
   m_GameObject: {fileID: 450170057}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3095, y: 1.2, z: 0}
+  m_LocalPosition: {x: -5.2, y: -0.7, z: 0}
   m_LocalScale: {x: 3.9531286, y: 1.1434, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,7 +443,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.094757
+  orthographic size: 9.375965
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -663,7 +663,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.528357, a: 1}
+  m_Color: {r: 0.9924528, g: 0.17040226, b: 0.5142238, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1072,7 +1072,7 @@ Transform:
   m_GameObject: {fileID: 930592952}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.02, y: -11.33, z: 0}
+  m_LocalPosition: {x: -16.02, y: -8.4, z: 0}
   m_LocalScale: {x: 3.02164, y: 1.1434, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1958,6 +1958,7 @@ GameObject:
   - component: {fileID: 1284031411}
   - component: {fileID: 1284031410}
   - component: {fileID: 1284031409}
+  - component: {fileID: 1284031413}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -1994,7 +1995,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2073,12 +2074,39 @@ Transform:
   m_GameObject: {fileID: 1284031408}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16, y: -9.79, z: 0}
+  m_LocalPosition: {x: -16, y: -6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1284031413
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284031408}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1340937870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,7 +2139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9071e8da2848f2f489b926c9e77c4dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 2146940477}
 --- !u!114 &1340937872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2173,7 +2201,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1340937875
 RectTransform:
@@ -2728,7 +2756,7 @@ GameObject:
   - component: {fileID: 2146940477}
   - component: {fileID: 2146940476}
   m_Layer: 5
-  m_Name: scoreText
+  m_Name: TextMeshProUGUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2748,10 +2776,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1340937875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -563.18, y: -183.56}
-  m_SizeDelta: {x: 200, y: 13.8778}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1021, y: -376.9}
+  m_SizeDelta: {x: 200, y: 13.877808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146940476
 MonoBehaviour:
@@ -2795,8 +2823,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2849,7 +2877,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 190.88525, y: 11.166954, z: 0, w: 0}
+  m_margin: {x: 190.88525, y: 11.040185, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

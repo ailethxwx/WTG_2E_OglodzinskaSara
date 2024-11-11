@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CoinCollect : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
             ScoreManager.scoreCount += 1;
+            Destroy(gameObject);
         }
     }
 }
