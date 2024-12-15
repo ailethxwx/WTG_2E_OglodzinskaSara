@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/gierka.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/lvl 2.unity
+    guid: 49f945e788296674bb3b246b8263a250
+  - enabled: 1
+    path: Assets/Scenes/lvl 3.unity
+    guid: 891a272299b9e3e48af40d4719a73575
+  - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: ffc7185a42bb1e943bb71d43932376db
   m_configObjects: {}
